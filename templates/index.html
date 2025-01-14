@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>PDF Splitter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Splitter</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="pdfFile">Upload PDF:</label>
+            <input type="file" name="pdfFile" accept="application/pdf" required>
+            <label for="pageRanges">Enter Page Ranges (e.g., 1-3, 5-7):</label>
+            <input type="text" name="pageRanges" placeholder="1-3, 5-7" required>
+            <button type="submit">Split PDF</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
