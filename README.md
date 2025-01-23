@@ -1,6 +1,7 @@
 # Flask PDF Splitter
 
 This is a simple Flask application that allows users to split PDF files into sections based on specified page ranges.
+Built using `ditto`. Learn more about `ditto` here: [https://github.com/yoheinakajima/ditto](https://github.com/yoheinakajima/ditto).
 
 ## Features
 
